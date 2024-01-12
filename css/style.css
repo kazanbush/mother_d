@@ -1,0 +1,90 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+body {
+    background: url(../img/plane_.jpg) no-repeat center / cover;
+    margin: 0;
+}
+
+.wrapper {
+    overflow: hidden;
+    font-family: 'Pacifico', cursive;
+    color: rgb(255, 252, 233);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    min-width: 100%;
+    animation: gradient 2s;
+}
+
+.content {
+    background-color: rgb(208, 174, 133);
+    display: inline-block;
+    border-radius: 100px 100px 100px 100px;
+    padding: 50px;
+    animation: shift 2s;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.poem {
+    font-size: 20px;
+}
+
+
+@keyframes shift {
+
+    0% {
+        transform: translateY(-100vw);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes gradient {
+    100% {
+        background: rgba(255, 166, 0, 0.749)
+    }
+
+    50% {
+        background: rgba(190, 123, 0, 0.344);
+    }
+
+
+    100% {
+        background: rgba(238, 130, 238, 0);
+    }
+}
+
+.picanim {
+    height: 10px;
+    width: 10px;
+}
+
+.minplane {
+    transform: translateY(-500px);
+}
+
+@keyframes minplane {
+    0% {
+        transform: translateX(-100vw);
+    }
+
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+.picanim {
+    animation: minplane 5s forwards
+}
